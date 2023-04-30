@@ -1,0 +1,20 @@
+---UDID bilgisini almak için---
+   adb devices
+
+
+---Appication bilgilerini almak için (appPackage ve appActivity)---
+   adb shell (Enter)
+   dumpsys window | grep -E mCurrentFocus (Enter)
+
+
+---Kapalı emulator'ü açmak için---
+   caps.setCapability("avd", "Pixel_4_API_29");
+   caps.setCapability("avdLaunchTimeout", 180000);
+
+
+---Önemli Not:---
+   driver.findElementBy -----> driver.findElement(AppiumBy.*)
+   MobileElement -----> WebElement
+   MobileBy -----> AppiumBy
+
+
