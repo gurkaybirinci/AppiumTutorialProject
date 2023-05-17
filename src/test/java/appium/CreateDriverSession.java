@@ -28,6 +28,10 @@ public class CreateDriverSession {
                         "ApiDemos-debug.apk";
                 caps.setCapability("appPackage", "io.appium.android.apis");
                 caps.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
+//                caps.setCapability("unlockType", "pin");
+//                caps.setCapability("unlockKey", "1111");
+                caps.setCapability("unlockType", "pattern");
+                caps.setCapability("unlockKey", "125478963");
 //                caps.setCapability("appPackage", "com.google.android.apps.maps");
 //                caps.setCapability("appActivity", "com.google.android.maps.MapsActivity");
                 return new AndroidDriver(url, caps);
